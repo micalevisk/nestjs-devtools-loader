@@ -1,0 +1,29 @@
+name: Release and publish to NPM registry
+
+on:
+  ## Allow triggering this workflow manually via GitHub CLI/web
+  workflow_dispatch:
+
+  ## Run this workflow whenever a push to the master branch is made
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    timeout-minutes: 3
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+          cache: npm
+      - run: npm ci
+        env:
+          NODE_ENV: development
+      - run: npm run build
+      - run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

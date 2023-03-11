@@ -1,0 +1,69 @@
+{
+  "name": "nestjs-devtools-loader",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "A helper package to easily enable/disable NestJS Devtools integration!",
+  "main": "dist/loader.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "release:check": "semantic-release --dry-run",
+    "release": "semantic-release"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/loader.js",
+    "./register": "./dist/register.js",
+    "./register.js": "./dist/register.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:micalevisk/nestjs-devtools-loader.git"
+  },
+  "keywords": [
+    "nestjs",
+    "devtools",
+    "utility"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "author": "Micael Levi L. C.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micalevisk/nestjs-devtools-loader/issues"
+  },
+  "homepage": "https://github.com/micalevisk/nestjs-devtools-loader#readme",
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ],
+    "branches": [
+      "main"
+    ]
+  },
+  "peerDependencies": {
+    "@nestjs/core": "^9.3.x",
+    "@nestjs/devtools-integration": "*",
+    "reflect-metadata": "^0.x"
+  },
+  "devDependencies": {
+    "@nestjs/core": "^9.3.9",
+    "@nestjs/devtools-integration": "^0.1.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^18.15.0",
+    "reflect-metadata": "^0.1.13",
+    "semantic-release": "^20.1.1",
+    "typescript": "^4.9.5"
+  }
+}

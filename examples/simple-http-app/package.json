@@ -1,0 +1,27 @@
+{
+  "name": "simple-http-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/main",
+  "scripts": {
+    "build": "nest build",
+    "start:dev": "nest start --watch --exec \"node -r nestjs-devtools-loader/register\"",
+    "start:prod": "node ."
+  },
+  "keywords": [],
+  "author": "Micael Levi L. C.",
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/common": "^9.3.9",
+    "@nestjs/core": "^9.3.9",
+    "@nestjs/platform-express": "^9.3.9",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.2.0",
+    "@nestjs/schematics": "^9.0.4",
+    "@types/node": "^18.15.0",
+    "typescript": "^4.9.5",
+    "nestjs-devtools-loader": "file:../.."
+  }
+}
