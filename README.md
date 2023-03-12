@@ -13,7 +13,7 @@ A helper package to easily enable/disable [NestJS Devtools](https://docs.nestjs.
 
 ### Install
 
-You must have `@nestjs/core`, `@nestjs/devtools-integration` and `reflect-metadata` instaled!
+You must have `@nestjs/core`, `@nestjs/devtools-integration` and `reflect-metadata` installed!
 
 ```bash
 npm install --save-dev nestjs-devtools-loader
