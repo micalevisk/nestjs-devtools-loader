@@ -1,6 +1,6 @@
 {
   "name": "nestjs-devtools-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "description": "A helper package to easily enable/disable NestJS Devtools integration!",
   "main": "dist/loader.js",
