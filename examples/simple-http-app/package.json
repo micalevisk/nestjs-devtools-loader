@@ -6,6 +6,7 @@
   "scripts": {
     "build": "nest build",
     "start:dev": "nest start --watch --exec \"node -r nestjs-devtools-loader/register\"",
+    "start:dev2": "NODE_OPTIONS='-r nestjs-devtools-loader/register' nest start --watch",
     "start:prod": "node ."
   },
   "keywords": [],
@@ -22,6 +23,6 @@
     "@nestjs/schematics": "^9.0.4",
     "@types/node": "^18.15.0",
     "typescript": "^4.9.5",
-    "nestjs-devtools-loader": "file:../.."
+    "nestjs-devtools-loader": "file:../../nestjs-devtools-loader-1.1.0.tgz"
   }
 }
