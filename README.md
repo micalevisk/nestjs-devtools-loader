@@ -9,19 +9,20 @@ A helper package to easily enable/disable [NestJS Devtools](https://docs.nestjs.
 ### What it does
 
 1. Add `snapshot` to `true` for `NestFactory.create` call
-2. Import `DevtoolsModule.register({ http: true, port: 8000 })` into the module passed to the `NestFactory.create` call
+2. Import `DevtoolsModule.register({ http: true, port: 8000 })` into the module passed to the `NestFactory.create` call if it was not imported already
+
+that reduces the amount of boilerplate code you would have to write and  
+also allows us to not import that `DevtoolsModule` with no effort.
 
 ### Install
 
-You must have `@nestjs/core`, `@nestjs/devtools-integration` and `reflect-metadata` installed!
+You must have `@nestjs/core` (v9.3 or greater), `@nestjs/devtools-integration` and `reflect-metadata` installed!
 
 ```bash
 npm install --save-dev nestjs-devtools-loader
 ```
 
 ### Usage
-
-Note that if your root module (usually `AppModule`) already had `DevtoolsModule` imported, this package won't import it again.
 
 #### Via preload module
 
@@ -30,7 +31,7 @@ With NestJS's CLI, you can do:
 
 ```bash
 nest start --exec "node -r nestjs-devtools-loader/register"
-#                       ^~ an alias for --require
+#                       ^~ an alias to --require
 ```
 
 If you want to change the default options that are supplied to `DevtoolsModule.register()`, use the environment variable: `NESTJS_DEVTOOLS_LOADER` like this:
