@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/nestjs-devtools-loader.svg)](https://www.npmjs.com/package/nestjs-devtools-loader)
 [![npm downloads](https://img.shields.io/npm/dt/nestjs-devtools-loader.svg)](https://www.npmjs.com/package/nestjs-devtools-loader)
-[![supported nestjs versions](https://img.shields.io/badge/supported_versions-9-873131.svg?logo=nestjs)](https://nestjs.com)
 
 A helper package to easily enable/disable [NestJS Devtools](https://docs.nestjs.com/devtools/overview) integration!
 

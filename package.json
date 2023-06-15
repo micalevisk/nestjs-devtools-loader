@@ -52,7 +52,7 @@
     ]
   },
   "peerDependencies": {
-    "@nestjs/core": "^9.3.x",
+    "@nestjs/core": "^9.3.x || ^10.x",
     "@nestjs/devtools-integration": "*",
     "reflect-metadata": "^0.x"
   },
