@@ -57,11 +57,11 @@
     "reflect-metadata": "^0.x"
   },
   "devDependencies": {
-    "@nestjs/core": "^10.4.4",
+    "@nestjs/core": "^10.4.15",
     "@nestjs/devtools-integration": "^0.1.6",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^22.7.4",
+    "@types/node": "^22.10.2",
     "reflect-metadata": "^0.2.2",
-    "semantic-release": "^24.1.2"
+    "semantic-release": "^24.2.0"
   }
 }
