@@ -1,6 +1,6 @@
 {
   "name": "nestjs-devtools-loader",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "commonjs",
   "description": "A helper package to easily enable/disable NestJS Devtools integration!",
   "main": "lib/loader.js",
@@ -52,16 +52,16 @@
     ]
   },
   "peerDependencies": {
-    "@nestjs/core": "^9.3.x || ^10.x",
+    "@nestjs/core": "^9.3.x || ^10.x || ^11.x",
     "@nestjs/devtools-integration": "*",
     "reflect-metadata": "^0.x"
   },
   "devDependencies": {
-    "@nestjs/core": "^10.4.15",
-    "@nestjs/devtools-integration": "^0.1.6",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/devtools-integration": "^0.2.0",
     "@semantic-release/git": "^10.0.1",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.7",
     "reflect-metadata": "^0.2.2",
-    "semantic-release": "^24.2.0"
+    "semantic-release": "^24.2.1"
   }
 }
